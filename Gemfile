@@ -151,7 +151,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'librarian', '>= 0.0.25', require: false
   gem 'annotate'
-  gem 'foreman', require: false
 end
 
 # this is an optional gem, it provides a high performance replacement
@@ -171,8 +170,6 @@ gem 'htmlentities', require: false
 gem 'flamegraph', require: false
 gem 'rack-mini-profiler', require: false
 
-gem 'unicorn', require: false
-gem 'puma', require: false
 gem 'rbtrace', require: false, platform: :mri
 
 # required for feed importing and embedding
@@ -200,6 +197,8 @@ end
 gem 'rmmseg-cpp', require: false
 
 gem 'logster'
+
+gem 'passenger'
 
 # perftools only works on 1.9 atm
 group :profile do
